@@ -46,6 +46,8 @@ Each record represents a patient profile with diagnostic indicators and a target
 - ca – Number of major vessels
 
 - thal – Thalassemia type
+  
+- target – Disease status (1 = presence, 0 = absence)
 
 # Requirements
 
@@ -53,9 +55,27 @@ Each record represents a patient profile with diagnostic indicators and a target
 - Jupyter Notebook 
 - Required Python libraries installed
 
+# Required Libraries
 
+- pandas
+- numpy
+- scikit-learn
+- matplotlib
+- gc
 
+# Key Features Used for Prediction
 
+## Strong predictors identified during exploratory analysis include:
+
+- Chest pain classification (cp)
+- Maximum heart rate (thalach)
+- ST depression (oldpeak)
+- Age
+- Vessel count (ca)
+
+Thalassemia (thal)
+
+Exercise-induced angina (exang)
 
 
 target – Disease status (1 = presence, 0 = absence)
