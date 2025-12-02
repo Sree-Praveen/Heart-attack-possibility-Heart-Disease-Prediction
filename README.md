@@ -1,4 +1,4 @@
-# Heart Disease Prediction using Machine Learning
+# Heartattack Prediction using Machine Learning
 
 This project applies machine learning techniques to predict whether a patient is likely to have heart disease based on clinical health indicators. The workflow covers end-to-end data processing, feature scaling, model training, hyperparameter tuning, evaluation, and comparison across multiple algorithms.The study demonstrates how predictive modeling can assist in risk assessment by identifying important factors in cardiovascular health.
 
