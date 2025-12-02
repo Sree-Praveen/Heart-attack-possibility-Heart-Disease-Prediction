@@ -17,7 +17,7 @@ This is a structured, supervised binary classification dataset from the healthca
 
 # Dataset Details
 
-Each record represents a patient profile with diagnostic indicators and a target label.
+- Each record represents a patient profile with diagnostic indicators and a target label.
 
 # Features
 
@@ -65,7 +65,7 @@ Each record represents a patient profile with diagnostic indicators and a target
 
 # Key Features Used for Prediction
 
-## Strong predictors identified during exploratory analysis include:
+### Strong predictors identified during exploratory analysis include:
 
 - Chest pain classification (cp)
 - Maximum heart rate (thalach)
@@ -77,7 +77,7 @@ Each record represents a patient profile with diagnostic indicators and a target
 - target – Disease status (1 = presence, 0 = absence)
 
 # Data Preprocessing
-## Exploratory Data Analysis
+### Exploratory Data Analysis
 
 - Summary statistics generated using describe()
 
@@ -136,7 +136,7 @@ Each record represents a patient profile with diagnostic indicators and a target
 
 # Model Evaluation Metrics
 
-## The following evaluation metrics were used:
+### The following evaluation metrics were used:
 
 - Accuracy
 - Precision
@@ -186,7 +186,7 @@ Each record represents a patient profile with diagnostic indicators and a target
 
 # Conclusion
 
-## Logistic Regression was selected as the final model due to:
+### Logistic Regression was selected as the final model due to:
 
 - Highest accuracy among tested models
 
@@ -198,7 +198,7 @@ Each record represents a patient profile with diagnostic indicators and a target
 
 - Low computational complexity
 
-## SVM and Random Forest performed well in recall but produced higher false-positive rates.
+- SVM and Random Forest performed well in recall but produced higher false-positive rates.
 
 
 # Future Work
