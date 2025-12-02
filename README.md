@@ -1,4 +1,4 @@
-# Heartattack Prediction using Machine Learning
+# Heart Attack Prediction using Machine Learning
 
 This project applies machine learning techniques to predict whether a patient is likely to have heart disease based on clinical health indicators. The workflow covers end-to-end data processing, feature scaling, model training, hyperparameter tuning, evaluation, and comparison across multiple algorithms.The study demonstrates how predictive modeling can assist in risk assessment by identifying important factors in cardiovascular health.
 
@@ -45,8 +45,7 @@ This is a structured, supervised binary classification dataset from the healthca
 - ca – Number of major vessels
 
 - thal – Thalassemia type
-  
-- target – Disease status (1 = presence, 0 = absence)
+
 
 ## Requirements
 
