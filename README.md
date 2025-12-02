@@ -116,12 +116,12 @@ This is a structured, supervised binary classification dataset from the healthca
 - Tuned using GridSearchCV
 - Hyperparameters optimized: Regularization strength (C), Penalty (L1/L2), Solver selection
 
-3 Support Vector Machine (SVM)
+### Support Vector Machine (SVM)
 
 - Hyperparameters tuned: Kernel type, C, gamma
 - Best kernel: RBF
 
-# Random Forest
+### Random Forest
 
 - Hyperparameters tuned
 
