@@ -169,6 +169,41 @@ Each record represents a patient profile with diagnostic indicators and a target
 - Precision: 64%
 
 
+# Model Comparison
 
 
-- 
+| Model                | Accuracy | Recall (Disease) | AUC   |
+|---------------------|----------|------------------|-------|
+| Logistic Regression | 80%      | 95%              | 0.898 |
+| SVM                 | 78%      | 90%              | —     |
+| Random Forest       | 74%      | 90%              | —     |
+
+# ROC Curve
+
+- ROC curve plotted for Logistic Regression model
+- AUC close to 0.90 indicates strong classification performance
+- Model demonstrates excellent separation between positive and negative classes
+
+# Conclusion
+
+## Logistic Regression was selected as the final model due to:
+
+- Highest accuracy among tested models
+
+- Excellent recall
+
+- Superior ROC-AUC performance
+
+- Model interpretability
+
+- Low computational complexity
+
+## SVM and Random Forest performed well in recall but produced higher false-positive rates.
+
+
+# Future Work
+
+- Apply SHAP for feature interpretability
+- Experiment with class balancing methods like SMOTE
+
+  
