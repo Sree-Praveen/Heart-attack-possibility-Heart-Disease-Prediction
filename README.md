@@ -2,7 +2,7 @@
 
 This project applies machine learning techniques to predict whether a patient is likely to have heart disease based on clinical health indicators. The workflow covers end-to-end data processing, feature scaling, model training, hyperparameter tuning, evaluation, and comparison across multiple algorithms.The study demonstrates how predictive modeling can assist in risk assessment by identifying important factors in cardiovascular health.
 
-# Dataset Source
+## Dataset Source
 This project uses publicly available data from:
 - UCI Machine Learning Repository – Heart Disease Dataset
 
@@ -10,15 +10,15 @@ This project uses publicly available data from:
 
 - The working dataset file used in this repository is heart.csv
 
-# Dataset Type
+## Dataset Type
 
 This is a structured, supervised binary classification dataset from the healthcare domain.It contains labeled patient records with a mix of numerical and categorical features used to predict the presence or absence of heart disease.
 
-# Dataset Details
+## Dataset Details
 
 - Each record represents a patient profile with diagnostic indicators and a target label.
 
-# Features
+## Features
 
 - age – Age of the patient
 
@@ -48,13 +48,13 @@ This is a structured, supervised binary classification dataset from the healthca
   
 - target – Disease status (1 = presence, 0 = absence)
 
-# Requirements
+## Requirements
 
 - Python 3.x
 - Jupyter Notebook 
 - Required Python libraries installed
 
-# Required Libraries
+## Required Libraries
 
 - pandas
 - numpy
@@ -62,9 +62,9 @@ This is a structured, supervised binary classification dataset from the healthca
 - matplotlib
 - gc
 
-# Key Features Used for Prediction
+## Key Features Used for Prediction
 
-### Strong predictors identified during exploratory analysis include:
+#### Strong predictors identified during exploratory analysis include:
 
 - Chest pain classification (cp)
 - Maximum heart rate (thalach)
@@ -75,8 +75,8 @@ This is a structured, supervised binary classification dataset from the healthca
 - Exercise-induced angina (exang)
 - target – Disease status (1 = presence, 0 = absence)
 
-# Data Preprocessing
-### Exploratory Data Analysis
+## Data Preprocessing
+#### Exploratory Data Analysis
 
 - Summary statistics generated using describe()
 
@@ -87,7 +87,7 @@ This is a structured, supervised binary classification dataset from the healthca
 ## Feature Engineering
 
 - Features were split into numeric and categorical groups
-### Numerical features**:
+#### Numerical features**:
 - age
 - trestbps
 - chol
@@ -97,35 +97,35 @@ This is a structured, supervised binary classification dataset from the healthca
 
 - sex, cp, fbs, restecg, slope, ca, thal
 
-# Feature Scaling
+## Feature Scaling
 
 - Numerical features were standardized using Z-score normalization
 - Implemented using StandardScaler
 - Resulting features have: Mean = 0, Standard deviation = 1
 - Scaled numeric variables were recombined with categorical features
 
-# Data Split
+## Data Split
 
 - Training set: 85%
 - Test set: 15%
 - Data split achieved using: train_test_split(test_size=0.15)
 - Reproducibility ensured using fixed random seeds
 
-# Models Used
+## Models Used
 - Logistic Regression
 - Tuned using GridSearchCV
 - Hyperparameters optimized: Regularization strength (C), Penalty (L1/L2), Solver selection
 
-### Support Vector Machine (SVM)
+#### Support Vector Machine (SVM)
 
 - Hyperparameters tuned: Kernel type, C, gamma
 - Best kernel: RBF
 
-### Random Forest
+#### Random Forest
 
 - Hyperparameters tuned
 
-# Model Training and Optimization
+## Model Training and Optimization
 
 - Cross-validation applied to all models
 - Logistic Regression and SVM used 10-fold validation
@@ -133,9 +133,9 @@ This is a structured, supervised binary classification dataset from the healthca
 - Best configurations selected via GridSearchCV
 - Final models retrained using optimal parameters
 
-# Model Evaluation Metrics
+## Model Evaluation Metrics
 
-### The following evaluation metrics were used:
+#### The following evaluation metrics were used:
 
 - Accuracy
 - Precision
@@ -146,7 +146,7 @@ This is a structured, supervised binary classification dataset from the healthca
 - Confusion Matrix
 - Classification Report
 
-# Results
+## Results
 - Logistic Regression (Best Performing Model):
 - Accuracy: 80%
 - Recall: 95%
@@ -155,20 +155,20 @@ This is a structured, supervised binary classification dataset from the healthca
 - AUC: 0.898
 
 
-# Support Vector Machine
+## Support Vector Machine
 
 - Accuracy: 78%
 - Recall (Disease class): 90%
 - Precision: 69%
 
-# Random Forest
+## Random Forest
 
 - Accuracy: 74%
 - Recall (Disease class): 90%
 - Precision: 64%
 
 
-# Model Comparison
+## Model Comparison
 
 
 | Model                | Accuracy | Recall (Disease) | AUC   |
@@ -177,15 +177,15 @@ This is a structured, supervised binary classification dataset from the healthca
 | SVM                 | 78%      | 90%              | —     |
 | Random Forest       | 74%      | 90%              | —     |
 
-# ROC Curve
+## ROC Curve
 
 - ROC curve plotted for Logistic Regression model
 - AUC close to 0.90 indicates strong classification performance
 - Model demonstrates excellent separation between positive and negative classes
 
-# Conclusion
+## Conclusion
 
-### Logistic Regression was selected as the final model due to:
+#### Logistic Regression was selected as the final model due to:
 
 - Highest accuracy among tested models
 
@@ -200,7 +200,7 @@ This is a structured, supervised binary classification dataset from the healthca
 - SVM and Random Forest performed well in recall but produced higher false-positive rates.
 
 
-# Future Work
+## Future Work
 
 - Apply SHAP for feature interpretability
 - Experiment with class balancing methods like SMOTE
